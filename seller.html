@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ4D1FHCW1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZ4D1FHCW1');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="286x134" href="assets/Vexparts.png">
+<link rel="icon" type="image/png" sizes="143x67" href="assets/vexparts143x67.png">
+<link rel="icon" type="image/png" sizes="48x22" href="assets/vexparts48x22.png">
+<link rel="icon" type="image/png" sizes="24x11" href="assets/vexparts24x11.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Seller - VexParts</title>
+    <meta name="description" content="VexParts Second Hand Spare Parts Exchange">
+    <meta name="image" content="https://vexpartsexchangeplatform.github.io/assets/Vexparts.png">
+    <meta itemprop="name" content="VexParts">
+    <meta itemprop="description" content="VexParts Second Hand Spare Parts Exchange">
+    <meta itemprop="image" content="https://vexpartsexchangeplatform.github.io/assets/Vexparts.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="VexParts">
+    <meta name="twitter:description" content="VexParts Second Hand Spare Parts Exchange">
+    <meta name="twitter:image:src" content="https://vexpartsexchangeplatform.github.io/assets/Vexparts.png">
+    <meta property="og:title" content="VexParts">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="VexParts Second Hand Spare Parts Exchange">
+    <meta property="og:image" content="https://vexpartsexchangeplatform.github.io/assets/Vexparts.png">
+    <style>
+      section { padding: 10px; width: 100vw; font-size: 21px; }
+      input#quantity:focus { border-bottom: 1px solid orange !important; -webkit-box-shadow: 0 1px 0 0 orange !important; box-shadow: 0 1px 0 0 orange !important; }
+      .btn-large { font-size: 21px; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+  <nav style="box-shadow: unset; -webkit-box-shadow: unset;">
+    <div class="nav-wrapper orange darken-3" style="white-space: nowrap;">
+      <a class="brand-logo left" style="left: 1rem;" href="index.html">
+        <img src="assets/Vexparts.png" alt="Logo" width="40" height="40" style="position: relative; top: 7px">
+        VexParts
+      </a>
+      <div class="right" style="height: 100%">
+        <div class="input-field">
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let input = document.getElementById('search')
+    let products = JSON.parse(input.getAttribute('data-products'))
+    M.Autocomplete.init(document.querySelectorAll('#search'), {
+      data: Object.fromEntries(products.map(product => [product.name, `assets/${product.image}`])),
+      onAutocomplete: () => {
+        window.location.href = `/#${products[input.value].id}`
+        input.value = ""
+      }
+    })
+    input.after(document.getElementById('search-icon'))
+    products = Object.fromEntries(products.map(product => [product.name, {id: product.id, image: product.image}]))
+  })
+</script>
+<style>
+  .autocomplete-content { width: 300px !important; left: unset !important; right: 0; }
+  .dropdown-content li > span { color: black; }
+  .autocomplete-content li .highlight { color: #ef6c00; }
+  .autocomplete-content li img { object-fit: contain; }
+</style>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <img src="assets/Vexparts.png" alt="Seller" style="width: 100%; height: 400px; object-fit: contain;">
+          </div>
+          <div class="col s12 m6">
+            <h3>
+              <strong>For Seller: </strong>
+            
+            </h3>
+            <p>Teams that want to sell second-hand vex parts</p>
+            <h4>Requirements: <br></h4>
+            <p style="color:red"> Has to be team that officially registered in robotevent</p>
+            
+            
+            <p>Contact Us:
+              <strong style="font-size: 32px; white-space: nowrap;"></strong>
+            </p>
+            <a class="waves-effect waves-light btn-large black" href="mailto: sanhorn0515@gmail.com"  style="width: 100%">Send Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <footer class="page-footer white-text Grey">
+  <div class="container">
+    <div class="row">
+      <div class="col m6 s12">
+        <h5>Products</h5>
+        <ul>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Vision_Sensor.html">V5 Vision Sensor</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Inertial_Sensor.html">V5 Inertial Sensor (Gyro)</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="GPS_Sensor.html">GPS Sensor</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Motor.html">V5 Motor</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Optical_Sensor.html">Optical Sensor</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Pneumatics.html">Vex Pneumatics</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Distance_Sensor.html">Vex Distance Sensor</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Controller.html">V5 Controller</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Brain.html">V5 Brain</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="Battery.html">V5 Battery</a>
+          </li>
+          <li style="white-space: nowrap; overflow-x: hidden;">
+            <a class="grey-text text-lighten-3" href="seller.html">For Seller</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+      <div class="col m4 offset-m2 s12">
+        <h5>VexParts</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-4" href="" >Team 96969Y</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Copyright © 2021 VexParts
+      <a class="grey-text text-lighten-4 right" href="">VexParts</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let recommends = document.getElementById('recommends')
+    let products = JSON.parse(recommends.getAttribute('data-recommends'))
+    for (let i = 0; i != 4; i++) {
+      let j = Math.floor(Math.random() * (products.length - i)) + i
+      let product = products[j]
+      products[j] = products[i]
+      products[i] = product
+      document.getElementById(`recommend-link-${i}`).setAttribute('href', `${product.id}.html`)
+      let img = document.getElementById(`recommend-image-${i}`)
+      img.setAttribute('src', `assets/${product.image}`)
+      img.setAttribute('alt', product.name)
+      document.getElementById(`recommend-name-${i}`).textContent = product.name
+      if (product.type)
+        document.getElementById(`recommend-type-${i}`).textContent = product.type
+      document.getElementById(`recommend-price-${i}`).textContent = product.price.toLocaleString()
+      if (product.monthly)
+        document.getElementById(`recommend-monthly-${i}`).classList.remove('hide')
+    }
+    document.getElementById('recommend-3').classList.add('hide-on-large-only')
+  })
+</script>
